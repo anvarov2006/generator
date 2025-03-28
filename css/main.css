@@ -231,6 +231,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 300px;
+  margin-bottom: 100px;
 }
 
 .hero {
@@ -278,4 +279,32 @@
   background-color: var(--clr--white);
   border-color: var(--main);
   border: 2px solid var(--main);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__info {
+  padding-bottom: 150px;
+}
+.about__tittle {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--clr--gray);
+  margin-bottom: 10px;
+}
+.about__text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 0.8);
+  padding-top: 10px;
+}
+.about__btn {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }/*# sourceMappingURL=main.css.map */
