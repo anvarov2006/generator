@@ -1,14 +1,13 @@
 .about {
-  @include flexbox($js:space-between);
+  @include flexbox($js:space-between, $align:center);
   &__info {
-  padding-top: 150px;
-
+  padding-bottom: 10px;
   }
   &__tittle {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 700;
     font-size: 48px;
-    color: var(--clr--main);  
+    color: var(--clr--gray);  
     margin-bottom: 10px;
 } 
 &__text {
@@ -16,12 +15,27 @@
 font-weight: 400;
 font-size: 18px;
 color: rgba(51, 51, 51, 0.8);
-padding-top: 10px;
-margin-bottom: 20px;
+padding-top: 20px;
+word-spacing:  2px;
+
+}
+&__send {
+    @include flexbox($js:right, $align:center);
+}
+&__btn {
+    margin-top: 50px;
+    border-radius: 8px;
+    width: 196px;
+    height: 52px;
+    background-color:var(--main);
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 18px;
+color: var(--clr--white);
+} 
 }
 
- 
-}
+
 
 
 
